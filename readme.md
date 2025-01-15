@@ -1,10 +1,14 @@
 # is-pdf
 
+[![npm (scoped)](https://img.shields.io/npm/v/@cityssm/is-pdf)](https://www.npmjs.com/package/@cityssm/is-pdf)
+[![Maintainability](https://api.codeclimate.com/v1/badges/fd9d2e87b1e046229930/maintainability)](https://codeclimate.com/github/cityssm/is-pdf/maintainability)
+[![codecov](https://codecov.io/gh/cityssm/is-pdf/graph/badge.svg?token=5GWMJ3KDF7)](https://codecov.io/gh/cityssm/is-pdf)
+[![DeepSource](https://app.deepsource.com/gh/cityssm/is-pdf.svg/?label=active+issues&show_trend=true&token=TJ0udt31xhowoAUY3N_DuUU1)](https://app.deepsource.com/gh/cityssm/is-pdf/)
+
 Checks if a Buffer/Uint8Array is a PDF file.
 Useful for testing PDF generating modules.
 
-
-## Install
+## Installation
 
 ```bash
 npm install @cityssm/is-pdf
