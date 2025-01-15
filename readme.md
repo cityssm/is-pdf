@@ -5,8 +5,9 @@
 [![codecov](https://codecov.io/gh/cityssm/is-pdf/graph/badge.svg?token=5GWMJ3KDF7)](https://codecov.io/gh/cityssm/is-pdf)
 [![DeepSource](https://app.deepsource.com/gh/cityssm/is-pdf.svg/?label=active+issues&show_trend=true&token=TJ0udt31xhowoAUY3N_DuUU1)](https://app.deepsource.com/gh/cityssm/is-pdf/)
 
-Checks if a Buffer/Uint8Array is a PDF file.
-Useful for testing PDF generating modules.
+Checks if a Buffer/Uint8Array is a PDF file. Useful for testing PDF generating modules.
+
+Forked from [kevva/is-pdf](https://github.com/kevva/is-pdf) to add Typescript support.
 
 ## Installation
 
@@ -16,15 +17,13 @@ npm install @cityssm/is-pdf
 
 ## Usage
 
-```js
+```javascript
 import fs from 'node:fs/promises'
 import isPdf from '@cityssm/is-pdf'
 
-var read = require('fs').readFileSync
-var isPdf = require('is-pdf')
-
 const pdfBuffer = await fs.readFile('path/to/file.pdf')
 console.log(isPdf(pdfBuffer))
+//=> true
 
 const imageBuffer = await fs.readFile('path/to/file.jpg')
 console.log(isPdf(imageBuffer))
@@ -33,5 +32,5 @@ console.log(isPdf(imageBuffer))
 
 ## Related Project
 
-[pdf-puppeteer](https://github.com/cityssm/pdf-puppeteer)<br />
+[**@cityssm/pdf-puppeteer**](https://github.com/cityssm/pdf-puppeteer)<br />
 A simple NPM package to convert HTML to PDF for Node applications by using Puppeteer.
