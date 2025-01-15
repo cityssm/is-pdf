@@ -1,5 +1,6 @@
-The MIT License (MIT)
+# The MIT License (MIT)
 
+Copyright (c) The Corporation of the City of Sault Ste. Marie
 Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

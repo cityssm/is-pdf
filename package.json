@@ -1,23 +1,32 @@
 {
-  "name": "is-pdf",
+  "name": "@cityssm/is-pdf",
   "version": "1.0.0",
+  "type": "module",
   "description": "Check if a Buffer/Uint8Array is a PDF file",
   "license": "MIT",
-  "repository": "kevva/is-pdf",
-  "author": {
-    "name": "Kevin Mårtensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "https://github.com/kevva"
+  "bugs": {
+    "url": "https://github.com/cityssm/is-pdf/issues"
   },
+  "homepage": "https://github.com/cityssm/is-pdf#readme",
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "contributors": [
+    {
+      "name": "Kevin Mårtensson",
+      "email": "kevinmartensson@gmail.com",
+      "url": "https://github.com/kevva"
+    }
+  ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node --test",
+    "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test"
   },
-  "files": [
-    "index.js"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/is-pdf.git"
+  },
   "keywords": [
     "buffer",
     "check",
@@ -27,7 +36,8 @@
     "uint8array"
   ],
   "devDependencies": {
-    "ava": "0.0.4",
-    "read-chunk": "^1.0.0"
+    "@types/node": "^22.10.6",
+    "eslint-config-cityssm": "^18.3.0",
+    "prettier-config-cityssm": "^1.0.0"
   }
 }
