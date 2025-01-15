@@ -7,7 +7,8 @@
 
 Checks if a Buffer/Uint8Array is a PDF file. Useful for testing PDF generating modules.
 
-Forked from [kevva/is-pdf](https://github.com/kevva/is-pdf) to add Typescript support.
+Forked from [kevva/is-pdf](https://github.com/kevva/is-pdf)
+to convert to ESM and to add Typescript support.
 
 ## Installation
 
